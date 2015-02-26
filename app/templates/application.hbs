@@ -1,11 +1,20 @@
 <div class="main-content">
 
+<center>
+<img width="200" src="http://www.e-architect.co.uk/images/jpgs/new_york/times_square_j161210.jpg"/>
+</center>
 
 <h1 id="title">Welcome to NYC Times Square's Find-A-Restaurant App, created in Ember.js</h1>
 
 <br>
-{{input value=search  placeholder="Search Cuisine Type"}}
-<button {{action 'search'}}> GO </button>
+<div class="ui icon input">{{input value=search  placeholder="Search Cuisine Type"}}
+<i class="search icon"></i>
+</div>
+
+
+<div class="small ui teal button" {{action 'search'}}> GO </div>
+<!-- <button {{action 'search'}}> GO </button> -->
+
 <br>
 
 {{outlet}}
